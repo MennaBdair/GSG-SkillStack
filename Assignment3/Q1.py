@@ -9,6 +9,7 @@ if os.path.exists(file_name):
         counter += len(m)
     print("The number of word in file is: ", counter)
     #identify the most frequent word and how many times it appears
+    #solving it by using dictionaries
     content_lower = content.lower()
     word_counts = {}
     for word in content_lower:
