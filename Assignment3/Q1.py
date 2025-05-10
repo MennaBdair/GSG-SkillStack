@@ -14,10 +14,11 @@ if os.path.exists(file_name):
     word_counts = {}
     for word in content_lower:
         if word == " ":
-            if word in word_counts:
-                word_counts[word] += 1
-            else:
-                word_counts[word] = 1
+            continue
+        if word in word_counts:
+            word_counts[word] += 1
+        else:
+            word_counts[word] = 1
 
     most_frequent_word = ""
     max_count = 0
